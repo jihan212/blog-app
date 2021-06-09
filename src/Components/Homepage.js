@@ -34,7 +34,7 @@ const Homepage = () => {
               <button
                 onClick={renderProps.onClick}
                 disabled={renderProps.disabled}
-                className="login__button"
+                className="w-full block bg-white hover:bg-gray-100 focus:bg-gray-100 text-gray-900 font-semibold rounded-lg px-4 py-3 border border-gray-300"
               >
                 Login with Google
               </button>
