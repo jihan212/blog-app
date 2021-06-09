@@ -71,11 +71,15 @@ const Blog = () => {
                     </div>
                 </div>
             </div> 
-                ))}
-
-
-
-            </div>
+         ))} 
+         {blogs?.totalArticles == 0 && ( 
+             <div class="text-center mb-12">
+                <h5 className="text-2xl md:text-4xl text-gray font-semibold">
+                    No blogs available. Search something else.
+                </h5>
+             </div>
+        )}
+        </div>
         </div>
         </section>
     );
