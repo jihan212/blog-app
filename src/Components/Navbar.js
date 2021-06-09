@@ -58,13 +58,13 @@ const Navbar = () => {
                             onClick={renderProps.onClick}
                             disabled={renderProps.disabled}
                             className="logout__button"
-                        > Logout 😦 </button>
+                        > Logout </button>
             )}
             onLogoutSuccess={logout}
             />
           </div>
         ) : (
-          <h1 className="notSignedIn">User not available 😞</h1>
+          <h1 className="notSignedIn">User not available !!</h1>
         )}
       </div>
     );

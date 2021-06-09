@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectUserInput, setBlogData } from '../features/userSlice';
+import { Link } from "react-router-dom";
+  
 
 const Blog = () => {
     const searchInput = useSelector(selectUserInput);
@@ -44,13 +46,13 @@ const Blog = () => {
                         <h1 class="text-2xl font-semibold mb-3">{blog.title}</h1>
                         <p class="leading-relaxed mb-3">{blog.description}</p>
                         <div class="flex items-center flex-wrap ">
-                            <a href={blog.source.name} class="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0">Read More
+                            <Link to={blog.source.name} class="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0">Read More
                                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M5 12h14"></path>
                                     <path d="M12 5l7 7-7 7"></path>
                                 </svg>
-                            </a>
+                            </Link>
                             <span
                                 class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                                 <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
