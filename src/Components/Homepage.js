@@ -23,7 +23,6 @@ const Homepage = () => {
     <div className="home__page" style={{ display: isSignedIn ? "none" : "" }}>
       {!isSignedIn ? (
         <div className="login__message">
-          <h2>📗</h2>
           <h1>A Readers favourite place!</h1>
           <p>
             We provide high quality online resource for reading blogs. Just sign
