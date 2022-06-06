@@ -10,7 +10,6 @@
 - React-redux
 - Material UI
 - Axios
-- React Google Login
 
 # Interface
 
