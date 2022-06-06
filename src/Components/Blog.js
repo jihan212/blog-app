@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectUserInput, setBlogData } from '../features/userSlice';
-import { Link } from "react-router-dom";
+
   
 
 const Blog = () => {
@@ -25,7 +25,7 @@ const Blog = () => {
         .catch((error) => {
             console.log(error);
           });
-    },[searchInput])
+    },[searchInput, blogUrl, dispatch]);
 
     return (
       <section class='md:h-full flex items-center text-gray-600'>
@@ -110,7 +110,7 @@ const Blog = () => {
                 </div>
               </div>
             ))}
-            {blogs?.totalArticles == 0 && (
+            {blogs?.totalArticles === 0 && (
               <div class='text-center mb-12'>
                 <h5 className='text-2xl md:text-4xl text-gray font-semibold'>
                   No blogs available. Search something else.
