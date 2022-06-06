@@ -12,7 +12,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Homepage />
-      {isSignedIn && <Blog />}
+      <Blog />
+      {/* {isSignedIn && <Blog />} */}
     </div>
   );
 }
