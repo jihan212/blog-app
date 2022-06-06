@@ -1,8 +1,6 @@
-### Backspace: A Blog App
+### News-space: A News Provider Site
 
-# **_[Live site](https://backspace-4a1c0.web.app)_**
-
-# **_[Code Link](https://github.com/jihan212/blog-app)_**
+# **_[Live site](https://news-space.netlify.app/)_**
 
 # Technology used in this app
 

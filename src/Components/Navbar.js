@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <h1 className='navbar__header'>Backspace </h1>
+      <a href='/' className='navbar__header'>News-space </a>
       <div className='blog__search'>
         <input
           className='search'
